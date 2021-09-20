@@ -1,0 +1,57 @@
+<html>
+  <header>
+    <head lang="en">
+      <meta charset="UTF-8"/>
+      <link rel="stylesheet" type="text/css" href="form.css">
+      <title>Form</title>
+    </head>
+    <h1 id="title">Surf Championship Form Survey </h1>
+    <p id="description">Fill out the form with the information required</p>
+  </header>
+  <body>
+    <form id="survey-form" method="POST" name="surf" action="Submit">
+      <fieldset id="user">
+        <label id="name-label">Name:</label><br>
+        <input type="text" id="name" name="nome" size="30"
+               required="required" placeholder=" Enter your name"></input><br>
+      <label id="email-label">Email:</label><br>
+      <input type="email" id="email" name="email"  size="30"
+             required="required" placeholder=" Enter your Email"></input><br>
+    <label id="number-label">Number:</label><br>
+    <input type="number" id="number" name="number"  min="40" max="9999" size="30" required="required" placeholder=" Enter your number"></input><br>
+  
+  <label id="dropdown-style">Which option best describes your surfing?</label><br>
+  <select id="dropdown" name="surfing">
+    <option value="0" id="disb" selected disabled>Escolha o seu surfista</option>
+    <option value="GM">Gabriel Medina</option>
+    <option value="IF">Ítalo Ferreira</option>
+    <option value="FT">Filipe Toledo</option>
+  </select><br>
+  <section id="radios">
+  <label id="radio-style">Are you gonna recommend it to a friend?</label><br>
+  <input type="radio"name="surf" id="surf1" value="yes"><label for="Yes">Yes,Definitely</label><br>
+  
+  <input type="radio" name="surf" id="surf2" value="maybe"><label for="maybe">Maybe</label><br>
+  
+  <input type="radio" name="surf" id="surf3" value="no"><label for="no">Not sure</label><br>
+  </section>
+  
+  <section id="checkboxes">
+  <label id="check-style">Which of these beaches would you be interested in visiting?</label><br>
+  <input type="checkbox" name="beach1" id="beach1" value="maresia"><label for="maresia">Maresia</label><br>
+  
+  <input type="checkbox" name="beach2" id="beach2" value="baiaformosa">
+  <label for="baiaformosa">Baía formosa</label><br>
+  
+  <input type="checkbox" name="beach3" id="beach3" value="maramar">
+  <label for="maramar">Maramar</label><br>
+  </section>
+  
+  <label id="textarea-style">Additional Comments</label><br>
+  <textarea id="comments" name="comments" cols="50" rows="5" placeholder="Enter your comments here..."></textarea><br>
+  
+  <input type="submit" name="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
